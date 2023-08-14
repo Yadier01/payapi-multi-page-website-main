@@ -7,7 +7,7 @@ export const Home = () => {
       <main className="py-12 ">
         <section className="flex flex-col items-center justify-center gap-12">
           <img
-            src="/public/home/desktop/illustration-phone-mockup.svg"
+            src="/home/desktop/illustration-phone-mockup.svg"
             alt=""
             className="w-48"
           />
@@ -33,18 +33,15 @@ export const Home = () => {
         </section>
         <section className="bg-zinc-500 p-4 pb-8">
           <span className="grid  grid-cols-2 w-full gap-8 py-8 px-6 items-center justify-center">
-            <img src="/public/shared/desktop/tesla-white.svg" alt="" />
+            <img src="/shared/desktop/tesla-white.svg" alt="" />
 
-            <img src="/public/shared/desktop/microsoft-white.svg" alt="" />
+            <img src="/shared/desktop/microsoft-white.svg" alt="" />
 
-            <img
-              src="/public/shared/desktop/hewlett-packard-white.svg"
-              alt=""
-            />
-            <img src="/public/shared/desktop/oracle-white.svg" alt="" />
-            <img src="/public/shared/desktop/google-white.svg" alt="" />
+            <img src="/shared/desktop/hewlett-packard-white.svg" alt="" />
+            <img src="/shared/desktop/oracle-white.svg" alt="" />
+            <img src="/shared/desktop/google-white.svg" alt="" />
 
-            <img src="/public/shared/desktop/nvidia-white.svg" alt="" />
+            <img src="/shared/desktop/nvidia-white.svg" alt="" />
           </span>
           <div className="text-center w-full text-gray-200 flex flex-col gap-4">
             <h2 className="font-bold text-3xl font-serif"> Who we work with</h2>
@@ -68,7 +65,7 @@ export const Home = () => {
 
         <section className="flex flex-col  text-center p-5">
           <img
-            src="/public/home/desktop/illustration-easy-to-implement2.svg"
+            src="/home/desktop/illustration-easy-to-implement2.svg"
             alt=""
             className="w-full"
           />
@@ -84,7 +81,7 @@ export const Home = () => {
           </div>
           <div className="mt-10 flex flex-col items-center justify-center gap-4">
             <img
-              src="/public/home/desktop/illustration-simple-ui4.svg"
+              src="/home/desktop/illustration-simple-ui4.svg"
               alt=""
               className="md:w-1/2 mb-10"
             />
@@ -97,10 +94,7 @@ export const Home = () => {
             </div>
             <ul className="flex flex-col md:flex-row md:gap-3  gap-12">
               <li className="flex flex-col items-center justify-center gap-6">
-                <img
-                  src="/public/home/desktop/icon-personal-finances.svg"
-                  alt=""
-                />
+                <img src="/home/desktop/icon-personal-finances.svg" alt="" />
                 <div>
                   <h3 className="font-bold font-serif text-xl pb-4 text-[#24374b]">
                     Personal Finances
@@ -113,10 +107,7 @@ export const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col items-center  gap-6">
-                <img
-                  src="/public/home/desktop/icon-banking-and-coverage.svg"
-                  alt=""
-                />
+                <img src="/home/desktop/icon-banking-and-coverage.svg" alt="" />
                 <div>
                   <h3 className="font-bold text-xl pb-4 font-serif text-[#24374b]">
                     Banking & Coverage
@@ -129,10 +120,7 @@ export const Home = () => {
                 </div>
               </li>
               <li className="flex flex-col items-center  gap-6">
-                <img
-                  src="/public/home/desktop/icon-consumer-payments.svg"
-                  alt=""
-                />
+                <img src="/home/desktop/icon-consumer-payments.svg" alt="" />
                 <div>
                   <h3 className="font-bold text-xl pb-4 font-serif text-[#24374b]">
                     Consumer Payments
