@@ -8,6 +8,7 @@ export const Header = () => {
   const toggleModal = () => {
     setIsOpen((prev) => !prev);
   };
+
   return (
     <>
       {/* mobile header */}

@@ -1,57 +1,44 @@
 import { Link } from "react-router-dom";
-import { ScheduleDemoBtn } from "../components/ScheduleDemoBtn";
+import { FormSchedule } from "../components/FormSchedule";
+import { Innovators } from "../components/Innovators";
 
 export const Home = () => {
   return (
     <>
       <main className="py-12 ">
-        <section className="flex flex-col items-center justify-center gap-12">
+        <section className="flex flex-col lg:flex-row-reverse items-center justify-center gap-12">
           <img
             src="/home/desktop/illustration-phone-mockup.svg"
             alt=""
             className="w-48"
           />
-          <div className="flex flex-col  ">
-            <h1 className="font-bold font-serif text-4xl text-center">
+          <div className="flex flex-col lg:items-baseline ">
+            <h1 className="font-bold font-serif  lg:w-[36%] lg:text-left text-4xl text-center">
               Start Building with our APIs for Absolutely Free.
             </h1>
-            <form className="py-12 flex flex-col px-4 gap-4 ">
-              <input
-                type="text"
-                placeholder="Enter email address"
-                className="p-4 shadow-2xl rounded-full"
-              />
-              <ScheduleDemoBtn />
-              <p className="text-center">
-                Have any questions?
-                <Link to={"/contact"} className="pl-2">
-                  <strong className="underline">Contact Us</strong>
-                </Link>
-              </p>
-            </form>
+            <FormSchedule className="justify-start bg-red-400 " />
+            <p className="text-center mt-5 mb-12 text-[#8a939b] text-lg">
+              Have any questions?
+              <Link to={"/contact"} className="pl-2">
+                <strong className="underline">Contact Us</strong>
+              </Link>
+            </p>
           </div>
         </section>
-        <section className="bg-zinc-500 p-4 pb-8">
-          <span className="grid  grid-cols-2 w-full gap-8 py-8 px-6 items-center justify-center">
-            <img src="/shared/desktop/tesla-white.svg" alt="" />
-
-            <img src="/shared/desktop/microsoft-white.svg" alt="" />
-
-            <img src="/shared/desktop/hewlett-packard-white.svg" alt="" />
-            <img src="/shared/desktop/oracle-white.svg" alt="" />
-            <img src="/shared/desktop/google-white.svg" alt="" />
-
-            <img src="/shared/desktop/nvidia-white.svg" alt="" />
-          </span>
-          <div className="text-center w-full text-gray-200 flex flex-col gap-4">
-            <h2 className="font-bold text-3xl font-serif"> Who we work with</h2>
-            <p className="leading-7">
-              Today, millions of people around the world have succesfully
-              connected their accounts to apps they love using our API. We
-              provide developers with the tools they need to create easy and
-              accesible experinces for their users.
-            </p>
-
+        <section className="bg-[#1b262f] lg:flex flex-row-reverse  p-12 h-[40vh] pb-8">
+          <Innovators className="float-right lg:gap-8 lg:align-baseline lg:content-center" />
+          <div className="text-center lg:text-left  lg:pt-12 lg:pl-12 w-full text-gray-200 flex flex-col gap-4">
+            <div className="flex flex-col gap-4 ">
+              <h2 className="font-bold text-4xl font-serif">
+                Who we work with
+              </h2>
+              <p className="leading-7 lg:w-5/6">
+                Today, millions of people around the world have succesfully
+                connected their accounts to apps they love using our API. We
+                provide developers with the tools they need to create easy and
+                accesible experinces for their users.
+              </p>
+            </div>
             <span className="pt-8">
               <Link
                 to={"/about"}
@@ -64,33 +51,39 @@ export const Home = () => {
         </section>
 
         <section className="flex flex-col  text-center p-5">
-          <img
-            src="/home/desktop/illustration-easy-to-implement2.svg"
-            alt=""
-            className="w-full"
-          />
-          <div className="flex flex-col gap-4 pb-20 mt-20">
-            <h2 className="font-bold text-3xl   font-serif">
-              Easy to implement
-            </h2>
-            <p>
-              Our API comes with just a few lines of code. You’ll be up and
-              running in no time. We built our documentation page to integrate
-              payments functionality with ease.
-            </p>
+          <div className="lg:flex  gap-24 lg:p-12 lg:pl-20 lg:justify-center items-center ">
+            <img
+              src="/home/desktop/illustration-easy-to-implement2.svg"
+              alt=""
+              className="w-full lg:w-1/2"
+            />
+            <div className="flex flex-col gap-4 pb-20 mt-20 lg:text-left  ">
+              <h2 className="font-bold text-3xl font-serif">
+                Easy to implement
+              </h2>
+              <p className="lg:w-3/5">
+                Our API comes with just a few lines of code. You’ll be up and
+                running in no time. We built our documentation page to integrate
+                payments functionality with ease.
+              </p>
+            </div>
           </div>
           <div className="mt-10 flex flex-col items-center justify-center gap-4">
-            <img
-              src="/home/desktop/illustration-simple-ui4.svg"
-              alt=""
-              className="md:w-1/2 mb-10"
-            />
-            <div className="flex flex-col gap-4 mb-8">
-              <h2 className="font-serif font-bold text-3xl">Simple UI & UX</h2>
-              <p className="text-[#6b7883]">
-                Our pre-built form is easy to integrate in your app or website’s
-                checkout flow and designed to optimize conversion.
-              </p>
+            <div className="lg:flex flex-row-reverse items-center">
+              <img
+                src="/home/desktop/illustration-simple-ui4.svg"
+                alt=""
+                className="md:w-1/2 mb-10"
+              />
+              <div className="flex flex-col gap-4 mb-8 lg:text-left">
+                <h2 className="font-serif font-bold text-3xl">
+                  Simple UI & UX
+                </h2>
+                <p className="text-[#6b7883] lg:w-5/6">
+                  Our pre-built form is easy to integrate in your app or
+                  website’s checkout flow and designed to optimize conversion.
+                </p>
+              </div>
             </div>
             <ul className="flex flex-col md:flex-row md:gap-3  gap-12">
               <li className="flex flex-col items-center justify-center gap-6">
@@ -134,20 +127,11 @@ export const Home = () => {
               </li>
             </ul>
           </div>
-          <div className="mt-20 ">
+          <div className="mt-20 lg:flex  justify-around items-center">
             <h2 className="font-bold text-4xl font-serif text-[#37536b]">
               Ready to start?
             </h2>
-            <form className="flex mt-5 gap-4 flex-col  w-full md:flex-row md:items-center md:justify-center">
-              <div className="md:relative flex flex-col w-1/2 md:flex-row gap-4 md:gap-0 justify-center items-center">
-                <input
-                  type="text"
-                  placeholder="Enter email address"
-                  className="p-4 shadow-2xl font-bold w-5/6 rounded-full "
-                />
-                <ScheduleDemoBtn className="md:absolute right-0 w-full md:w-auto md:py-4 md:px-12" />
-              </div>
-            </form>
+            <FormSchedule className="lg:w-3/4" />
           </div>
         </section>
       </main>
